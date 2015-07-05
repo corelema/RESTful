@@ -43,7 +43,7 @@ public class DataEntryPoint {
 	// Return the list of datas for applications
 	@GET
 	//@Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
-	@Produces("application/json")
+	@Produces(MediaType.APPLICATION_JSON)
 	public List<Data> getDatas() {
 		List<Data> datas = new ArrayList<Data>();
 		datas.addAll(DataDao.instance.getModel().values());
